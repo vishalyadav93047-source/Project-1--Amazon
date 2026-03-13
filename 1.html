@@ -1,78 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: rgb(205, 204, 204);
+        }
+
+        .main {
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .box-1 {
+            margin-top: 7px;
+
+        }
+
+        .location2 {
+            color: white;
+            font-size: 13px;
+            margin-right: 15px;
+            margin-top: 7px;
+
+
+        }
+
+        .box-2 {
+            display: flex;
+        }
+
+        .location1 {
+            margin-top: 15px;
+            margin-right: none;
+        }
+
+        .box-3 {
+            width: 50%;
+            display: flex;
+        }
+
+        .box-3 select {
+            height: 35px;
+            width: 47px;
+            padding: 5px;
+            font-size: 12px;
+            outline: none;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            background-color: #E6E6E6;
+        }
+
+        .box-3 select:hover {
+            background-color: #dbd7d7;
+        }
+
+        .box-3 input {
+            width: 85%;
+            height: 35px;
+            outline: none;
+            padding-left: 20px;
+            margin-left: -5;
+            border: none;
+            border-left: 1px solid #E7E7E7;
+        }
+
+        .box-3 button {
+            height: 35px;
+            width: 47px;
+            padding: 5px;
+            font-size: 12px;
+            outline: none;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FEBD69;
+        }
+
+        .box-3 button:hover {
+            background-color: #ee9e37;
+        }
+
+        .box-4 {
+            display: flex;
+            margin-top: 7px;
+        }
+
+        .img {
+            margin-top: 17px;
+            margin-left: -10px;
+        }
+
+        .box1 select {
+            height: 35px;
+            width: 40px;
+            display: flex;
+            background-color: none;
+            border: none;
+            outline: none;
+            border-radius: 5px 5px;
+            margin-top: 7px;
+            background-color: black;
+            color: white;
+
+
+        }
+
+        .box2 {
+            color: white;
+            font-size: 11px;
+            margin-left: 20px;
+            margin-top: 7px;
+            margin-right: 4px;
+        }
+
+        .box3 {
+            color: white;
+            font-size: 11px;
+            margin-right: 3px;
+            margin-top: 7px;
+            margin-left: 22px;
+        }
+
+        .box4 {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+
+
+        }
+
+        .Cart-counter {
+            color: #ee9e37;
+            position: relative;
+            left: 35px;
+            font-weight: bold;
+        }
+
+        .main1 {
+            width: 100%;
+            height: 35px;
+            background-color: #253030;
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+        }
+
+        .box2 {
+            display: flex;
+            width: 95%;
+
+
+        }
+
+        .box1_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-bottom: 11px;
+            font-size: 16px;
+            margin-left: 17px;
+
+        }
+
+        .box2_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box3_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box4_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box5_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box6_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box7_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box8_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+            /* margin: 5px 0 0 6px;
+      padding: 8px 5px; */
+        }
+
+        .box9_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box10_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box11_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box12_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box13_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box14_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box15_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+
+        }
+
+        .box16_ {
+            margin-top: 3px;
+            display: flex;
+            color: white;
+            margin-left: 18px;
+            margin-bottom: 11px;
+            font-size: 16px;
+        }
+
+        .box1 {
+            display: flex;
+            /* margin-right: 10px; */
+        }
+
+        .class {
+            /* align-items: center; */
+            margin-left: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #E6E6E6;
+            margin-left: 10px;
+
+        }
+
+        .main2 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(28, 175, 175);
+
+        }
+
+        .product-list-1 {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: -100px;
+
+
+        }
+
+        .box1- {
+            height: 450px;
+            width: 350px;
+            /* border: 2px solid black; */
+
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .img-text {
+            font-size: 15px;
+            height: 50px;
+        }
+
+        .outer-box {
+            display: flex;
+            gap: 20px;
+        }
+
+        .main3 {
+            height: 250px;
+            width: 97.09%;
+            /* border: 2px solid black; */
+            background-color: white;
+            align-items: center;
+            display: flex;
+            margin-left: 22px;
+            margin-top: 73px;
+
+        }
+
+
+        .box {
+            height: 180px;
+            width: 180px;
+            /* border: 2px solid black; */
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            /* margin-top: 75px; */
+            margin-left: 13px;
+            margin-right: 13px;
+            /* overflow: hidden; */
+        }
+
+        .main4 {
+            height: 50px;
+            width: 100%;
+            background-color: #374454;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main5 {
+            height: 550px;
+            width: 100%;
+            background-color: #232F3E;
+            display: flex;
+            color: white;
+            align-items: center;
+        }
+
+        .box--1 {
+            height: 500px;
+            width: 400px;
+            margin-left: 250px;
+            margin-right: 50px;
+            margin-top: 80px;
+            font-size: 16px;
+
+
+        }
+
+        .box--2 {
+            height: 500px;
+            width: 400px;
+            margin-left: -145px;
+            margin-right: 50px;
+            margin-top: 80px;
+            font-size: 16px;
+
+            /* display: flex; */
+        }
+
+        .box--3 {
+            height: 500px;
+            width: 400px;
+            margin-left: -120px;
+            margin-right: 50px;
+            margin-top: 80px;
+            font-size: 16px;
+
+
+        }
+
+        .box--4 {
+            height: 500px;
+            width: 400px;
+            margin-left: -80px;
+            margin-right: 100px;
+            margin-top: 80px;
+            font-size: 16px;
+        }
+
+        .main6 {
+            height: 100px;
+            width: 100%;
+            background-color: #232F3E;
+            display: flex;
+            align-items: center;
+            border: 2px solid #374454;
+        }
+
+        .box_-1 {
+            margin-top: 5px;
+            margin-left: 40%;
+        }
+
+        .box_-2 {
+            height: 35px;
+            width: 70px;
+            margin-left: 30px;
+            align-items: center;
+            margin-bottom: 33px;
+            margin-top: 7px;
+        }
+
+        .box_-2 select {
+            height: 40px;
+            width: 90px;
+            display: flex;
+            background-color: none;
+            border: 1px solid #374454;
+            outline: none;
+            border-radius: 5px 5px;
+            margin-top: 4px;
+            background-color: #232F3E;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box_-3 {
+            height: 40px;
+            width: 90px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px 5px;
+            margin-left: 40px;
+            margin-top: 20px;
+            margin-bottom: 33px;
+            border: 1px solid #374454;
+        }
+    </style>
 </head>
+
 <body>
     <div class="main">
-    <div class="box-1">
-      <img src="nav-sprite-global-1x-reorg-privacy._CB546381437_.png" alt="" srcset="" height="50px" width="110px">
-      <p></p>
-    </div>
-    <div class="box-2">
-      <div class="location1">
-        <img src="123nav-sprite-global-1x-reorg-privacy._CB546381437_.png" alt="" srcset="" height="30px" width="28px">
-
-      </div>
-      <div class="location2">
-        <p>Delivering to Badarpur 110044</p>
-        <h2>Update location</h2>
-      </div>
-    </div>
-    <div class="box-3">
-      <select>
-        <option>All Categories</option>
-        <option>Alexa Skills</option>
-        <option>Amazon Devices</option>
-        <option>Amazon Fashion</option>
-        <option>Amazon Fresh</option>
-        <option>Amazon Pharmacy</option>
-        <option>Appliances</option>
-        <option>Apps & Games</option>
-        <option>Audible Audiobooks</option>
-        <option>Baby</option>
-        <option>Beauty</option>
-        <option>Books</option>
-        <option>Car & Motorbike</option>
-      </select>
-      <input type="text" placeholder="search amazon" width="20px">
-      <button><img src="search-icon-png-5.png" height="20px" width="20px"></button>
-    </div>
-    <div class="box-4">
-      <div class="box1">
-        <div class="img">
-          <img src="R.png" alt="" srcset="" height="15px" width="16px">
+        <div class="box-1">
+            <img src="nav-sprite-global-1x-reorg-privacy._CB546381437_.png" alt="" srcset="" height="50px"
+                width="110px">
+            <p></p>
         </div>
-        <select>
-          <option>EN - English</option>
-          <option>TE - ரூலல்</option>
-          <option>KN - சல்</option>
-          <option>ML - 2வ00</option>
-          <option>BN - वाश्ला</option>
-          <option>MR - मराठी</option>
-          <option>HI - हिंदी</option>
-        </select>
-      </div>
-      <div class="box2">
-        <div class="nav-singin">
-          <p><span>Hello, sign in</span></p>
-          <h2>Account & lists</h2>
-        </div>
-      </div>
-      <div class="box3">
-        <p>Returns</p>
-        <h2>&Orders</h2>
-      </div>
-      <div class="box4">
-        <span class="Cart-counter">0</span>
-        <img src="4321nav-sprite-global-1x-reorg-privacy._CB546381437_.png" alt="" srcset="" height="45px" width="60px">
+        <div class="box-2">
+            <div class="location1">
+                <img src="123nav-sprite-global-1x-reorg-privacy._CB546381437_.png" alt="" srcset="" height="30px"
+                    width="28px">
 
-      </div>
+            </div>
+            <div class="location2">
+                <p>Delivering to Badarpur 110044</p>
+                <h2>Update location</h2>
+            </div>
+        </div>
+        <div class="box-3">
+            <select>
+                <option>All Categories</option>
+                <option>Alexa Skills</option>
+                <option>Amazon Devices</option>
+                <option>Amazon Fashion</option>
+                <option>Amazon Fresh</option>
+                <option>Amazon Pharmacy</option>
+                <option>Appliances</option>
+                <option>Apps & Games</option>
+                <option>Audible Audiobooks</option>
+                <option>Baby</option>
+                <option>Beauty</option>
+                <option>Books</option>
+                <option>Car & Motorbike</option>
+            </select>
+            <input type="text" placeholder="search amazon" width="20px">
+            <button><img src="search-icon-png-5.png" height="20px" width="20px"></button>
+        </div>
+        <div class="box-4">
+            <div class="box1">
+                <div class="img">
+                    <img src="R.png" alt="" srcset="" height="15px" width="16px">
+                </div>
+                <select>
+                    <option>EN - English</option>
+                    <option>TE - ரூலல்</option>
+                    <option>KN - சல்</option>
+                    <option>ML - 2வ00</option>
+                    <option>BN - वाश्ला</option>
+                    <option>MR - मराठी</option>
+                    <option>HI - हिंदी</option>
+                </select>
+            </div>
+            <div class="box2">
+                <div class="nav-singin">
+                    <p><span>Hello, sign in</span></p>
+                    <h2>Account & lists</h2>
+                </div>
+            </div>
+            <div class="box3">
+                <p>Returns</p>
+                <h2>&Orders</h2>
+            </div>
+            <div class="box4">
+                <span class="Cart-counter">0</span>
+                <img src="4321nav-sprite-global-1x-reorg-privacy._CB546381437_.png" alt="" srcset="" height="45px"
+                    width="60px">
+
+            </div>
+
+        </div>
+        <p style="color: white; margin-left: -29px; margin-right: 20px; margin-top: 8px;">Cart</p>
+    </div>
+    <div class="main1">
+        <div class="box1">
+            <div class="class">
+                <img src="5678nav-sprite-global-1x-reorg-privacy._CB546381437_.png" alt="" height="43px" width="43px"
+                    srcset="">
+                <p style="margin-left: -10px;">All</p>
+            </div>
+            <div class="box2">
+                <div class="box1_">
+                    <p>Fresh</p>
+                </div>
+                <div class="box2_">
+                    <p>MXPlayer</p>
+                </div>
+                <div class="box3_">
+                    <p>Sell</p>
+                </div>
+                <div class="box4_">
+                    <p>Bestsellers</p>
+                </div>
+                <div class="box5_">
+                    <p>Mobiles</p>
+                </div>
+                <div class="box6_">
+                    <p>Today'sDeals</p>
+                </div>
+                <div class="box7_">
+                    <p>Prime</p>
+                </div>
+                <div class="box8_">
+                    <p>Costomerservice</p>
+                </div>
+                <div class="box9_">
+                    <p>NewReleases</p>
+                </div>
+                <div class="box10_">
+                    <p>Electronics</p>
+                </div>
+                <div class="box11_">
+                    <p>Fashion</p>
+                </div>
+                <div class="box12_">
+                    <p>Home&Kitchen</p>
+                </div>
+                <div class="box13_">
+                    <p>AmazonPay</p>
+                </div>
+                <div class="box14_">
+                    <p>Computers</p>
+                </div>
+                <div class="box15_">
+                    <p>Books</p>
+                </div>
+                <div class="box16_">
+                    <p>Home Improvement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <img src="Jupiter25_T1_Heder_PC_Non_Prime.jpg" width="100%" height="400px" alt="" srcset="">
+    </div>
+
+
+    <div class="product-list-1">
+        <div class="box1-">
+
+            <h2 style="margin-top: 10px; margin-left: 15px;">Revamp your home in style </h2>
+
+
+            <div class="outer-box">
+
+                <div class="box2-">
+                    <img src="186x116_Home_decor_1._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text">Figurines, vases &<br> more</p>
+                </div>
+                <div class="box2-">
+                    <img src="23186x116_Home_furnishings_2._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text">bedsheets & more</p>
+                </div>
+
+            </div>
+
+            <div class="outer-box">
+                <div class="box2-">
+                    <img src="3333186x116_Home_storage_1._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text"> Home storage </p>
+                </div>
+                <div class="box2-">
+                    <img src="444186x116_Home_lighting_2._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text">Lighting solutions</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box1-">
+            <h2 style="margin-top: 10px; margin-left: 15px;">Appliances for your home | Up to 55% off</h2>
+
+
+            <div class="outer-box">
+
+                <div class="box2-">
+                    <img src="Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" height="120px" width="120px"
+                        alt="" srcset="">
+                    <p class="img-text">Air conditioners</p>
+                </div>
+                <div class="box2-">
+                    <img src="22Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" height="120px"
+                        width="120px" alt="" srcset="">
+                    <p class="img-text">Refrigerators</p>
+                </div>
+
+            </div>
+
+            <div class="outer-box">
+                <div class="box2-">
+                    <img src="33Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" height="120px"
+                        width="120px" alt="" srcset="">
+                    <p class="img-text"> Microwaves </p>
+                </div>
+                <div class="box2-">
+                    <img src="4186x116---wm._SY116_CB667322346_.jpg" height="120px" width="120px" alt="" srcset="">
+                    <p class="img-text">Washing machines</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="box1-">
+            <h2 style="margin-top: 10px; margin-left: 15px;">Starting ₹149 | Headphones</h2>
+
+
+            <div class="outer-box">
+
+                <div class="box2-">
+                    <img src="PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text">Starting ₹249 | boAt</p>
+                </div>
+                <div class="box2-">
+                    <img src="2PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text">Starting 2349 | boult</p>
+                </div>
+
+            </div>
+
+            <div class="outer-box">
+                <div class="box2-">
+                    <img src="3PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text"> Starting 2649 | Noise</p>
+                </div>
+                <div class="box2-">
+                    <img src="4PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text">Starting ₹149 | Zebronics</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="box1-">
+            <h2 style="margin-top: 10px; margin-left: 15px;">Automotive essentials | Up to 60% off </h2>
+
+            <div class="outer-box">
+
+                <div class="box2-">
+                    <img src="Rim_tyrecare1x._SY116_CB410830552_.jpg" height="120px" width="120px" alt="" srcset="">
+                    <p class="img-text">Tyre & rim care</p>
+                </div>
+                <div class="box2-">
+                    <img src="Glasscare1X._SY116_CB410830553_.jpg" height="120px" width="120px" alt="" srcset="">
+                    <p class="img-text">Cleaning accessories</p>
+                </div>
+
+            </div>
+
+            <div class="outer-box">
+                <div class="box2-">
+                    <img src="Vaccum1x._SY116_CB410830552_.jpg" height="120px" width="120px" alt="" srcset="">
+                    <p class="img-text"> Vacuum cleaner </p>
+                </div>
+                <div class="box2-">
+                    <img src="Vega_helmet_186x116._SY116_CB405090404_.jpg" height="120px" width="120px" alt=""
+                        srcset="">
+                    <p class="img-text">Helmets</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main3" style=" overflow-x: scroll;">
+        <div class="box">
+            <img src="61vFuU1kYnL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="671KkUduTAUL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="261LpaWQiwPL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="3361T3gurhdCL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="171eErF68xxL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="271IPb5owYbL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="41Lj0uQaDNL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+
+        </div>
+        <div class="box">
+            <img src="161rzyDdPAuL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="22L5AXvRavL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="81iDoT+WxEL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="71cvXZBQMXL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
+        <div class="box">
+            <img src="461grUERHiAL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
+        </div>
 
     </div>
-    <p style="color: white; margin-left: -29px; margin-right: 20px; margin-top: 8px;">Cart</p>
-  </div>
+    <div class="main4">
+        <p>Back to top</p>
+    </div>
+    <div class="main5">
+        <div class="box--1">
+            <h3>Get to Know Us</h3>
+            <br>
+            <p>Careers</p>
+            <br>
+            <p> Blog</p>
+            <br>
+            <p> About Amazon</p>
+            <br>
+            <p>Investor Relations</p>
+            <br>
+            <p>Amazon Devices</p>
+            <br>
+            <p>Amazon Science</p>
+        </div>
+        <div class="box--2">
+            <h3>Make Money with Us</h3>
+            <br>
+            <p>Sell products on Amazon</p><br>
+            <p>Sell on Amazon Business</p><br>
+            <p>Sell apps on Amazon</p><br>
+            <p>Become an Affiliate</p><br>
+            <p>Advertise Your Products</p><br>
+            <p>Self-Publish with Us</p><br>
+            <p>Host an Amazon Hub</p><br>
+            <p>See More Make Money with Us</p>
+        </div>
+        <div class="box--3">
+            <h3>Amazon Payment Products</h3>
+            <br>
+            <p>Amazon Business Card</p>
+            <br>
+            <p>Shop with Points</p>
+            <br>
+            <p>Reload Your Balance</p>
+            <br>
+            <p>Amazon Currency Converter</p>
+
+        </div>
+        <div class="box--4">
+            <h3>Let Us Help You</h3>
+            <br>
+            <p>Amazon and COVID-19</p>
+            <br>
+            <p>Your Account</p>
+            <br>
+            <p>Your Orders</p>
+            <br>
+            <p>Shipping Rates & Policies</p>
+            <br>
+            <p>Returns & Replacements</p>
+            <br>
+            <p>Manage Your Content and Devices</p>
+            <br>
+            <p>Help</p>
+        </div>
+    </div>
+    <div class="main6">
+        <div class="box_-1">
+            <img src="nav-sprite-global-1x-reorg-privacy._CB546381437_.png" height="50px" width="85px" alt="" srcset="">
+        </div>
+        <div class="box_-2">
+            <select>
+                <option>English </option>
+                <option>ரூலல் </option>
+                <option>சல் </option>
+                <option>2வ00 </option>
+                <option>वाश्ला </option>
+                <option>मराठी </option>
+                <option>हिंदी </option>
+            </select>
+        </div>
+        <div class="box_-3">
+            <img src="R.png" alt="" srcset="" height="14px" width="15px">
+            <p>India</p>
+        </div>
+    </div>
 </body>
+
 </html>
