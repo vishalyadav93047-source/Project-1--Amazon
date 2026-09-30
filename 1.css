@@ -1,8 +1,6 @@
 /* =========================================================
-   AMAZON-STYLE PREMIUM CSS
-   Designed specifically for the uploaded HTML structure
-   Mobile + Tablet + Desktop responsive
-   ========================================================= */
+   RESET
+========================================================= */
 
 * {
     margin: 0;
@@ -24,8 +22,8 @@ body {
 }
 
 img {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
 }
 
 button,
@@ -34,64 +32,71 @@ select {
     font: inherit;
 }
 
+
 /* =========================================================
-   TOP HEADER
-   ========================================================= */
+   MAIN HEADER
+========================================================= */
 
 .main {
     width: 100%;
-    min-height: 72px;
-    padding: 8px 18px;
+    min-height: 70px;
+    padding: 7px 12px;
+
     background: #131921;
-    color: #fff;
-    display: flex;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 120px 185px minmax(250px, 1fr) auto;
     align-items: center;
-    gap: 16px;
-    position: relative;
-    z-index: 20;
+    gap: 9px;
 }
+
+
+/* =========================================================
+   LOGO
+========================================================= */
 
 .box-1 {
-    flex: 0 0 auto;
-    padding: 6px 8px;
-    border: 1px solid transparent;
     display: flex;
     align-items: center;
-}
-
-.box-1:hover {
-    border-color: #fff;
+    justify-content: center;
+    min-width: 0;
 }
 
 .box-1 img {
-    width: 110px;
-    height: 50px;
+    width: 105px;
+    height: 48px;
     object-fit: contain;
 }
 
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
 .box-2 {
-    flex: 0 0 auto;
+    min-width: 0;
+
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 7px 8px;
+    gap: 6px;
+
+    padding: 6px;
+
     border: 1px solid transparent;
-    min-width: 185px;
 }
 
 .box-2:hover {
-    border-color: #fff;
+    border-color: white;
 }
 
 .location1 {
     flex: 0 0 auto;
-    display: flex;
-    align-items: center;
 }
 
 .location1 img {
-    width: 28px;
-    height: 30px;
+    width: 23px;
+    height: 25px;
     object-fit: contain;
 }
 
@@ -100,50 +105,62 @@ select {
 }
 
 .location2 p {
-    color: #ccc;
-    font-size: 12px;
-    line-height: 1.2;
+    color: #ddd;
+    font-size: 10px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .location2 h2 {
-    color: #fff;
+    color: white;
     font-size: 14px;
-    line-height: 1.2;
     white-space: nowrap;
 }
 
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
 .box-3 {
-    flex: 1 1 auto;
-    min-width: 240px;
-    max-width: 850px;
-    height: 42px;
+    width: 100%;
+    height: 44px;
+
+    min-width: 0;
+
     display: flex;
-    align-items: stretch;
-    margin: 0 auto;
 }
 
 .box-3 select {
     width: 58px;
     min-width: 58px;
+
     border: 0;
-    outline: 0;
-    padding: 0 7px;
-    background: #e6e6e6;
-    color: #333;
+    outline: none;
+
+    padding: 0 6px;
+
+    background: #f3f3f3;
+    color: #222;
+
     border-radius: 6px 0 0 6px;
+
     font-size: 12px;
 }
 
 .box-3 input {
-    flex: 1;
-    min-width: 0;
     width: 100%;
+    min-width: 0;
+
     border: 0;
-    outline: 0;
+    outline: none;
+
     padding: 0 15px;
-    background: #fff;
+
+    background: white;
     color: #111;
+
     font-size: 15px;
 }
 
@@ -152,17 +169,20 @@ select {
 }
 
 .box-3 button {
-    width: 55px;
-    min-width: 55px;
+    width: 56px;
+    min-width: 56px;
+
     border: 0;
-    outline: 0;
+
     background: #febd69;
+
     border-radius: 0 6px 6px 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     cursor: pointer;
-    transition: .2s ease;
 }
 
 .box-3 button:hover {
@@ -174,281 +194,298 @@ select {
     height: 21px;
 }
 
+
+/* =========================================================
+   ACCOUNT AREA
+========================================================= */
+
 .box-4 {
-    flex: 0 0 auto;
+    min-width: 0;
+
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .box-4 > div {
+    padding: 6px;
+
     border: 1px solid transparent;
-    padding: 7px 6px;
 }
 
 .box-4 > div:hover {
-    border-color: #fff;
+    border-color: white;
 }
+
+
+/* LANGUAGE */
 
 .box1 {
     display: flex;
     align-items: center;
+    gap: 3px;
 }
 
-.box1 .img {
-    display: flex;
-    align-items: center;
+.box1 .img img {
+    width: 18px;
+    height: 16px;
+    object-fit: contain;
 }
 
 .box1 select {
-    width: 72px;
+    width: 43px;
+
     border: 0;
-    outline: 0;
+    outline: none;
+
     background: transparent;
-    color: #fff;
+    color: white;
+
     font-size: 12px;
-    cursor: pointer;
 }
 
-.box2,
-.box3 {
-    color: #fff;
-    white-space: nowrap;
+.box1 select option {
+    color: #111;
 }
+
+
+/* ACCOUNT */
 
 .box2 p,
 .box3 p {
-    font-size: 11px;
     color: #ddd;
-    line-height: 1.1;
+    font-size: 10px;
+    white-space: nowrap;
 }
 
 .box2 h2,
 .box3 h2 {
-    font-size: 15px;
-    line-height: 1.2;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
 }
+
+
+/* CART */
 
 .box4 {
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
 .box4 img {
-    width: 60px;
-    height: 45px;
+    width: 55px;
+    height: 42px;
     object-fit: contain;
 }
 
 .Cart-counter {
     position: absolute;
+
     top: 0;
-    left: 25px;
+    left: 24px;
+
     color: #ff9900;
-    font-size: 16px;
-    font-weight: 800;
-    z-index: 2;
+
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.main > p {
-    color: #fff !important;
-    margin: 0 !important;
-    padding: 7px 6px;
+.cart-text {
+    color: white;
     font-size: 14px;
     white-space: nowrap;
 }
 
+
 /* =========================================================
-   SECOND NAVIGATION
-   ========================================================= */
+   CATEGORY NAV
+========================================================= */
 
 .main1 {
     width: 100%;
-    min-height: 44px;
+    height: 45px;
+
     background: #232f3e;
-    color: #fff;
+    color: white;
+
     overflow: hidden;
 }
 
-.main1 > .box1 {
+.nav-inner {
     width: 100%;
-    min-height: 44px;
+    height: 45px;
+
+    padding: 0 6px;
+
     display: flex;
     align-items: center;
-    padding: 0 10px;
-    gap: 4px;
 }
+
+
+/* ALL */
 
 .main1 .class {
     flex: 0 0 auto;
-    min-height: 40px;
+
+    height: 41px;
+
+    padding: 0 10px;
+
     display: flex;
     align-items: center;
-    gap: 2px;
-    padding: 0 9px;
+
+    gap: 5px;
+
     border: 1px solid transparent;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
 }
 
 .main1 .class:hover {
-    border-color: #fff;
+    border-color: white;
 }
 
 .main1 .class img {
-    width: 31px;
-    height: 31px;
+    width: 26px;
+    height: 26px;
     object-fit: contain;
 }
 
-.main1 > .box1 > .box2 {
+.main1 .class p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* NAV SCROLL */
+
+.nav-scroll {
     flex: 1;
     min-width: 0;
+
+    height: 45px;
+
     display: flex;
     align-items: center;
+
     overflow-x: auto;
     overflow-y: hidden;
+
     scrollbar-width: none;
 }
 
-.main1 > .box1 > .box2::-webkit-scrollbar {
+.nav-scroll::-webkit-scrollbar {
     display: none;
 }
 
-.box1_,
-.box2_,
-.box3_,
-.box4_,
-.box5_,
-.box6_,
-.box7_,
-.box8_,
-.box9_,
-.box10_,
-.box11_,
-.box12_,
-.box13_,
-.box14_,
-.box15_,
-.box16_ {
+.nav-item {
     flex: 0 0 auto;
-    min-height: 40px;
-    padding: 0 11px;
+
+    height: 40px;
+
+    padding: 0 12px;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+
     border: 1px solid transparent;
-    cursor: pointer;
 }
 
-.box1_ p,
-.box2_ p,
-.box3_ p,
-.box4_ p,
-.box5_ p,
-.box6_ p,
-.box7_ p,
-.box8_ p,
-.box9_ p,
-.box10_ p,
-.box11_ p,
-.box12_ p,
-.box13_ p,
-.box14_ p,
-.box15_ p,
-.box16_ p {
+.nav-item:hover {
+    border-color: white;
+}
+
+.nav-item p {
+    color: white;
+
     font-size: 14px;
     font-weight: 600;
+
     white-space: nowrap;
 }
 
-.box1_:hover,
-.box2_:hover,
-.box3_:hover,
-.box4_:hover,
-.box5_:hover,
-.box6_:hover,
-.box7_:hover,
-.box8_:hover,
-.box9_:hover,
-.box10_:hover,
-.box11_:hover,
-.box12_:hover,
-.box13_:hover,
-.box14_:hover,
-.box15_:hover,
-.box16_:hover {
-    border-color: #fff;
-}
 
 /* =========================================================
    HERO
-   ========================================================= */
+========================================================= */
 
 .main2 {
     width: 100%;
-    height: clamp(250px, 34vw, 410px);
-    overflow: hidden;
-    position: relative;
-    background: #ddd;
-}
+    height: clamp(260px, 34vw, 420px);
 
-.main2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 35%;
-    background: linear-gradient(to bottom, transparent, rgba(234, 237, 237, .85));
-    pointer-events: none;
+    overflow: hidden;
+
+    background: #ddd;
 }
 
 .main2 img {
     width: 100%;
     height: 100% !important;
+
     object-fit: cover;
     object-position: center;
 }
 
+
 /* =========================================================
    CATEGORY CARDS
-   ========================================================= */
+========================================================= */
 
 .product-list-1 {
     width: 100%;
-    padding: 0 24px 30px;
-    margin-top: -105px;
-    position: relative;
-    z-index: 5;
+
+    padding: 20px 22px 30px;
+
+    background: #eaeded;
+
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
 }
 
 .box1- {
     min-width: 0;
-    min-height: 420px;
-    padding: 20px 18px 18px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,.18);
+
+    padding: 18px 15px;
+
+    background: white;
+
+    box-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.14);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.box1-:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.18);
 }
 
 .box1- h2 {
-    margin: 0 0 18px 0 !important;
-    font-size: 21px;
-    line-height: 1.22;
-    color: #0f1111;
+    margin-bottom: 17px;
+
+    color: #111;
+
+    font-size: 20px;
+    line-height: 1.2;
 }
+
+
+/* 2x2 */
 
 .outer-box {
     width: 100%;
+
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px 12px;
-    margin-bottom: 15px;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 17px 10px;
 }
 
 .box2- {
@@ -457,39 +494,50 @@ select {
 
 .box2- img {
     width: 100% !important;
-    height: 125px !important;
+    height: 120px !important;
+
     object-fit: cover;
-    background: #f7f7f7;
+
+    background: #f5f5f5;
 }
 
 .img-text {
-    margin-top: 6px;
-    font-size: 13px;
-    line-height: 1.2;
+    margin-top: 5px;
+
     color: #222;
+
+    font-size: 12px;
+    line-height: 1.25;
 }
 
-.box2-:hover img {
-    opacity: .9;
-}
 
 /* =========================================================
-   PRODUCT SLIDER
-   ========================================================= */
+   PRODUCT STRIP
+========================================================= */
 
 .main3 {
-    width: calc(100% - 48px);
-    min-height: 245px;
-    margin: 0 24px 28px;
-    padding: 18px 14px;
-    background: #fff;
+    width: calc(100% - 44px);
+
+    height: 235px;
+
+    margin: 0 22px 28px;
+
+    padding: 15px 8px;
+
+    background: white;
+
     display: flex;
     align-items: center;
-    gap: 20px;
-    overflow-x: auto !important;
+
+    gap: 14px;
+
+    overflow-x: auto;
     overflow-y: hidden;
+
     scrollbar-width: none;
-    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+
+    box-shadow:
+        0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
 .main3::-webkit-scrollbar {
@@ -497,9 +545,11 @@ select {
 }
 
 .main3 .box {
-    flex: 0 0 190px;
-    width: 190px;
+    flex: 0 0 185px;
+
+    width: 185px;
     height: 205px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -508,28 +558,34 @@ select {
 .main3 .box img {
     width: 180px !important;
     height: 180px !important;
+
     object-fit: contain;
-    transition: transform .2s ease;
+
+    transition: transform 0.2s ease;
 }
 
 .main3 .box:hover img {
     transform: scale(1.04);
 }
 
+
 /* =========================================================
    BACK TO TOP
-   ========================================================= */
+========================================================= */
 
 .main4 {
     width: 100%;
-    min-height: 52px;
+    height: 52px;
+
     background: #37475a;
-    color: #fff;
+
+    color: white;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     cursor: pointer;
-    transition: background .2s ease;
 }
 
 .main4:hover {
@@ -541,35 +597,41 @@ select {
     font-weight: 600;
 }
 
+
 /* =========================================================
    FOOTER
-   ========================================================= */
+========================================================= */
 
 .main5 {
     width: 100%;
-    min-height: 430px;
+
     padding: 45px 8%;
+
     background: #232f3e;
     color: #ddd;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-}
 
-.main5 > div {
-    min-width: 0;
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 45px;
 }
 
 .main5 h3 {
-    color: #fff;
-    font-size: 17px;
     margin-bottom: 14px;
+
+    color: white;
+
+    font-size: 16px;
 }
 
 .main5 p {
-    font-size: 14px;
-    line-height: 1.8;
     color: #ddd;
+
+    font-size: 13px;
+    line-height: 1.9;
+
     cursor: pointer;
 }
 
@@ -577,250 +639,363 @@ select {
     text-decoration: underline;
 }
 
-/* Remove the HTML <br> visual gaps and use CSS spacing */
-.main5 br {
-    display: none;
-}
 
 /* =========================================================
    FOOTER BOTTOM
-   ========================================================= */
+========================================================= */
 
 .main6 {
     width: 100%;
-    min-height: 95px;
-    padding: 20px 8%;
+    min-height: 90px;
+
+    padding: 17px 8%;
+
     background: #131a22;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
-    gap: 22px;
-    border-top: 1px solid #3a4553;
+
+    gap: 20px;
 }
 
 .box_-1 img {
     width: 85px;
-    height: 50px;
+    height: 48px;
+
     object-fit: contain;
 }
 
 .box_-2 select {
-    min-width: 110px;
-    height: 38px;
-    padding: 0 12px;
+    width: 105px;
+    height: 37px;
+
+    padding: 0 9px;
+
     background: #131a22;
-    color: #fff;
+    color: white;
+
     border: 1px solid #848e99;
+
     border-radius: 4px;
-    outline: none;
 }
 
 .box_-3 {
-    min-width: 100px;
-    height: 38px;
+    min-width: 95px;
+    height: 37px;
+
     padding: 0 12px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
-    color: #fff;
+
+    gap: 6px;
+
+    color: white;
+
     border: 1px solid #848e99;
+
     border-radius: 4px;
 }
 
 .box_-3 img {
     width: 15px;
-    height: 14px;
+    height: 15px;
 }
 
-/* =========================================================
-   LARGE TABLET
-   ========================================================= */
-
-@media (max-width: 1200px) {
-
-    .main {
-        gap: 9px;
-        padding: 7px 10px;
-    }
-
-    .box-2 {
-        min-width: 150px;
-    }
-
-    .box-3 {
-        min-width: 200px;
-    }
-
-    .box-4 {
-        gap: 3px;
-    }
-
-    .product-list-1 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        margin-top: -70px;
-    }
-}
 
 /* =========================================================
    TABLET
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 
     .main {
-        flex-wrap: wrap;
-        min-height: auto;
+        grid-template-columns:
+            100px
+            145px
+            minmax(200px, 1fr)
+            auto;
+
+        gap: 7px;
     }
 
-    .box-1 {
-        order: 1;
+    .box-1 img {
+        width: 92px;
     }
 
-    .box-2 {
-        order: 2;
-    }
-
-    .box-4 {
-        order: 3;
-    }
-
-    .box-3 {
-        order: 4;
-        flex-basis: 100%;
-        max-width: none;
-    }
-
-    .main > p {
-        display: none;
-    }
-
-    .main2 {
-        height: 300px;
-    }
-
-    .main5 {
-        padding: 40px 5%;
-        gap: 30px;
+    .product-list-1 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
     }
 }
 
+
 /* =========================================================
-   MOBILE AMAZON APP LAYOUT
-   ========================================================= */
+   SMALL LAPTOP / TABLET
+========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
-    body {
-        background: #eaeded;
-    }
-
-    /* Header */
     .main {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns:
+            95px
+            150px
+            1fr;
+
         grid-template-areas:
-            "logo location cart"
-            "account account account"
+            "logo location account"
             "search search search";
+
         gap: 7px;
-        padding: 8px 9px 10px;
-        background: #131921;
     }
 
     .box-1 {
         grid-area: logo;
-        padding: 4px;
-        border: 0;
-    }
-
-    .box-1 img {
-        width: 82px;
-        height: 40px;
     }
 
     .box-2 {
         grid-area: location;
+    }
+
+    .box-3 {
+        grid-area: search;
+    }
+
+    .box-4 {
+        grid-area: account;
+
+        justify-content: flex-end;
+    }
+
+    .main2 {
+        height: 280px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .main {
+        width: 100%;
+
+        min-height: 0;
+
+        padding: 7px 7px 8px;
+
+        display: grid;
+
+        grid-template-columns:
+            78px
+            minmax(0, 1fr)
+            45px;
+
+        grid-template-areas:
+            "logo location cart"
+            "account account account"
+            "search search search";
+
+        gap: 5px;
+
+        background: #131921;
+    }
+
+
+    /* LOGO */
+
+    .box-1 {
+        grid-area: logo;
+
         min-width: 0;
-        padding: 4px;
-        border: 0;
-        overflow: hidden;
+
+        justify-content: flex-start;
+    }
+
+    .box-1 img {
+        width: 73px;
+        height: 38px;
+
+        object-fit: contain;
+    }
+
+
+    /* LOCATION */
+
+    .box-2 {
+        grid-area: location;
+
+        min-width: 0;
+
+        padding: 2px 3px;
+
+        gap: 4px;
+
+        border: none;
     }
 
     .location1 img {
-        width: 22px;
-        height: 24px;
+        width: 18px;
+        height: 20px;
     }
 
     .location2 {
         min-width: 0;
+        overflow: hidden;
     }
 
     .location2 p {
-        font-size: 9px;
+        font-size: 8px;
+
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
     .location2 h2 {
         font-size: 11px;
+
+        white-space: nowrap;
     }
+
+
+    /* CART */
 
     .box-4 {
         grid-area: cart;
+
+        min-width: 0;
+
+        padding: 0 !important;
+
         display: flex;
+
+        justify-content: flex-end;
         align-items: center;
-        gap: 2px;
+    }
+
+    .box-4 > div {
         padding: 0;
+
+        border: none;
     }
 
     .box-4 .box1,
     .box-4 .box2,
-    .box-4 .box3 {
+    .box-4 .box3,
+    .box-4 .cart-text {
         display: none;
     }
 
-    .box-4 .box4 {
-        border: 0;
-        padding: 0;
+    .box4 {
+        display: block !important;
+
+        position: relative;
     }
 
     .box4 img {
-        width: 48px;
+        width: 43px;
         height: 38px;
+
+        object-fit: contain;
     }
 
     .Cart-counter {
-        left: 19px;
-        top: -2px;
-        font-size: 13px;
+        top: -3px;
+        left: 18px;
+
+        font-size: 12px;
     }
+
+
+    /* ACCOUNT TEXT */
+
+    .box-4::before {
+        content:
+            "Hello, sign in     Account & Lists     Returns & Orders";
+
+        display: block;
+
+        position: absolute;
+
+        top: 50px;
+        left: 8px;
+        right: 8px;
+
+        height: 20px;
+
+        color: white;
+
+        font-size: 10px;
+        font-weight: 600;
+
+        line-height: 20px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+
+
+    /* SEARCH */
 
     .box-3 {
         grid-area: search;
+
         width: 100%;
+        height: 42px;
+
+        margin-top: 1px;
+
         min-width: 0;
-        height: 43px;
-        margin: 0;
     }
 
     .box-3 select {
         width: 50px;
         min-width: 50px;
-        height: 43px;
+
+        height: 42px;
+
         font-size: 10px;
+
+        border-radius: 5px 0 0 5px;
     }
 
     .box-3 input {
-        height: 43px;
+        width: 100%;
+        min-width: 0;
+
+        height: 42px;
+
+        padding: 0 10px;
+
         font-size: 13px;
-        padding: 0 11px;
     }
 
     .box-3 button {
-        width: 49px;
-        min-width: 49px;
-        height: 43px;
+        width: 50px;
+        min-width: 50px;
+
+        height: 42px;
+
+        border-radius: 0 5px 5px 0;
     }
 
     .box-3 button img {
@@ -828,261 +1003,331 @@ select {
         height: 19px;
     }
 
-    /* Mobile nav */
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
     .main1 {
-        min-height: 44px;
+        width: 100%;
+        height: 43px;
+
+        overflow: hidden;
     }
 
-    .main1 > .box1 {
-        padding: 0 5px;
-        gap: 2px;
+    .nav-inner {
+        width: 100%;
+        height: 43px;
+
+        padding: 0 2px;
     }
 
     .main1 .class {
-        padding: 0 7px;
+        height: 41px;
+
+        padding: 0 8px;
+
+        gap: 4px;
     }
 
     .main1 .class img {
-        width: 27px;
-        height: 27px;
+        width: 23px;
+        height: 23px;
     }
 
-    .main1 > .box1 > .box2 {
+    .main1 .class p {
+        font-size: 14px;
+    }
+
+    .nav-scroll {
+        height: 43px;
+
+        min-width: 0;
+
         overflow-x: auto;
+        overflow-y: hidden;
+
+        -webkit-overflow-scrolling: touch;
     }
 
-    .box1_,
-    .box2_,
-    .box3_,
-    .box4_,
-    .box5_,
-    .box6_,
-    .box7_,
-    .box8_,
-    .box9_,
-    .box10_,
-    .box11_,
-    .box12_,
-    .box13_,
-    .box14_,
-    .box15_,
-    .box16_ {
-        padding: 0 8px;
+    .nav-item {
+        height: 40px;
+
+        padding: 0 9px;
     }
 
-    .box1_ p,
-    .box2_ p,
-    .box3_ p,
-    .box4_ p,
-    .box5_ p,
-    .box6_ p,
-    .box7_ p,
-    .box8_ p,
-    .box9_ p,
-    .box10_ p,
-    .box11_ p,
-    .box12_ p,
-    .box13_ p,
-    .box14_ p,
-    .box15_ p,
-    .box16_ p {
+    .nav-item p {
         font-size: 12px;
+
+        white-space: nowrap;
     }
 
-    /* Hero */
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
     .main2 {
-        height: 205px;
+        width: 100%;
+
+        height: 190px;
+
+        overflow: hidden;
+
+        background: #ddd;
     }
 
-    .main2::after {
-        height: 30%;
+    .main2 img {
+        width: 100%;
+        height: 100% !important;
+
+        object-fit: cover;
+
+        /*
+           Left side rakha hai taaki mobile me
+           banner ka important content zyada visible rahe.
+        */
+        object-position: left center;
     }
 
-    /* Cards */
+
+    /* =====================================================
+       CATEGORY CARDS
+    ===================================================== */
+
     .product-list-1 {
-        padding: 0 9px 18px;
-        margin-top: -25px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 9px;
+        width: 100%;
+
+        padding: 8px 6px 16px;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+
+        background: #eaeded;
     }
 
     .box1- {
-        min-height: 275px;
-        padding: 13px 9px;
-        box-shadow: 0 1px 5px rgba(0,0,0,.15);
+        width: 100%;
+        min-width: 0;
+
+        padding: 11px 7px 12px;
+
+        background: white;
+
+        box-shadow:
+            0 1px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .box1-:hover {
+        transform: none;
     }
 
     .box1- h2 {
-        font-size: 17px;
-        margin-bottom: 13px !important;
+        margin-bottom: 11px;
+
+        font-size: 15px;
+
         line-height: 1.18;
+
+        word-break: normal;
     }
 
+
+    /* 2x2 CARD IMAGES */
+
     .outer-box {
-        gap: 10px 7px;
-        margin-bottom: 10px;
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 11px 5px;
+    }
+
+    .box2- {
+        width: 100%;
+        min-width: 0;
     }
 
     .box2- img {
         width: 100% !important;
-        height: 88px !important;
+
+        height: 82px !important;
+
+        object-fit: cover;
     }
 
     .img-text {
         margin-top: 4px;
-        font-size: 10px;
+
+        font-size: 9px;
+
         line-height: 1.2;
+
+        word-break: normal;
     }
 
-    /* Product slider */
+
+    /* =====================================================
+       PRODUCT STRIP
+    ===================================================== */
+
     .main3 {
-        width: calc(100% - 18px);
-        min-height: 180px;
-        margin: 0 9px 18px;
-        padding: 10px 5px;
-        gap: 9px;
+        width: calc(100% - 12px);
+
+        height: 175px;
+
+        margin: 0 6px 17px;
+
+        padding: 7px 4px;
+
+        gap: 8px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+    .main3::-webkit-scrollbar {
+        display: none;
     }
 
     .main3 .box {
-        flex-basis: 135px;
-        width: 135px;
+        flex: 0 0 125px;
+
+        width: 125px;
         height: 155px;
     }
 
     .main3 .box img {
-        width: 130px !important;
-        height: 140px !important;
+        width: 120px !important;
+        height: 135px !important;
+
+        object-fit: contain;
     }
 
+
+    /* =====================================================
+       BACK TO TOP
+    ===================================================== */
+
     .main4 {
-        min-height: 45px;
+        width: 100%;
+
+        height: 45px;
     }
 
     .main4 p {
         font-size: 12px;
     }
 
-    /* Footer */
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
     .main5 {
-        min-height: 0;
-        padding: 32px 18px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 28px 20px;
+        width: 100%;
+
+        padding: 30px 14px;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px 15px;
     }
 
     .main5 h3 {
+        margin-bottom: 7px;
+
         font-size: 14px;
-        margin-bottom: 8px;
+
+        line-height: 1.3;
     }
 
     .main5 p {
         font-size: 11px;
+
         line-height: 1.7;
     }
 
+
+    /* =====================================================
+       FOOTER BOTTOM
+    ===================================================== */
+
     .main6 {
-        min-height: 105px;
-        padding: 16px 10px;
+        width: 100%;
+
+        min-height: 95px;
+
+        padding: 15px 8px;
+
+        display: flex;
+
         flex-wrap: wrap;
-        gap: 10px 14px;
+
+        justify-content: center;
+
+        gap: 9px 12px;
     }
 
     .box_-1 img {
-        width: 75px;
-        height: 42px;
+        width: 72px;
+        height: 40px;
     }
 
-    .box_-2 select,
+    .box_-2 select {
+        width: 95px;
+        height: 34px;
+
+        font-size: 11px;
+    }
+
     .box_-3 {
-        height: 35px;
-        font-size: 12px;
+        min-width: 85px;
+
+        height: 34px;
+
+        font-size: 11px;
     }
 }
 
-/* =========================================================
-   SMALL PHONES 360px / 390px / 412px
-   ========================================================= */
 
-@media (max-width: 420px) {
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 390px) {
 
     .main {
-        padding-left: 7px;
-        padding-right: 7px;
+        grid-template-columns:
+            70px
+            minmax(0, 1fr)
+            42px;
+
+        padding-left: 6px;
+        padding-right: 6px;
     }
 
     .box-1 img {
-        width: 76px;
-        height: 37px;
-    }
-
-    .location2 p {
-        font-size: 8px;
-    }
-
-    .location2 h2 {
-        font-size: 10px;
-    }
-
-    .box4 img {
-        width: 44px;
-        height: 36px;
-    }
-
-    .Cart-counter {
-        left: 17px;
-        font-size: 12px;
-    }
-
-    .main2 {
-        height: 185px;
-    }
-
-    .product-list-1 {
-        padding-left: 7px;
-        padding-right: 7px;
-        gap: 7px;
-    }
-
-    .box1- {
-        min-height: 250px;
-        padding: 11px 7px;
-    }
-
-    .box1- h2 {
-        font-size: 15px;
-    }
-
-    .outer-box {
-        gap: 8px 5px;
-    }
-
-    .box2- img {
-        height: 75px !important;
-    }
-
-    .img-text {
-        font-size: 9px;
-    }
-
-    .main5 {
-        padding-left: 13px;
-        padding-right: 13px;
-        gap: 25px 12px;
-    }
-}
-
-/* =========================================================
-   320px DEVICES
-   ========================================================= */
-
-@media (max-width: 350px) {
-
-    .box-1 img {
-        width: 68px;
+        width: 66px;
     }
 
     .location1 img {
-        width: 19px;
+        width: 17px;
+        height: 19px;
     }
 
     .location2 p {
@@ -1090,59 +1335,126 @@ select {
     }
 
     .location2 h2 {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .box4 img {
         width: 40px;
     }
 
-    .box-3 select {
-        width: 45px;
-        min-width: 45px;
-    }
-
-    .box-3 button {
-        width: 45px;
-        min-width: 45px;
-    }
-
-    .box-3 input {
-        font-size: 12px;
+    .Cart-counter {
+        left: 16px;
     }
 
     .main2 {
-        height: 165px;
+        height: 180px;
     }
 
     .product-list-1 {
+        padding-left: 5px;
+        padding-right: 5px;
+
         gap: 6px;
     }
 
     .box1- {
-        min-height: 225px;
-        padding: 9px 6px;
+        padding: 9px 6px 10px;
     }
 
     .box1- h2 {
         font-size: 14px;
     }
 
+    .outer-box {
+        gap: 9px 5px;
+    }
+
     .box2- img {
-        height: 64px !important;
+        height: 73px !important;
     }
 
     .img-text {
         font-size: 8px;
     }
+}
 
-    .main3 .box {
-        flex-basis: 120px;
-        width: 120px;
+
+/* =========================================================
+   VERY SMALL PHONE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .main {
+        grid-template-columns:
+            64px
+            minmax(0, 1fr)
+            39px;
     }
 
-    .main3 .box img {
-        width: 115px !important;
-        height: 125px !important;
+    .box-1 img {
+        width: 60px;
+    }
+
+    .location1 img {
+        width: 16px;
+    }
+
+    .location2 p {
+        font-size: 6px;
+    }
+
+    .location2 h2 {
+        font-size: 9px;
+    }
+
+    .box4 img {
+        width: 36px;
+    }
+
+    .Cart-counter {
+        left: 14px;
+    }
+
+    .box-3 select {
+        width: 44px;
+        min-width: 44px;
+    }
+
+    .box-3 button {
+        width: 44px;
+        min-width: 44px;
+    }
+
+    .box-3 input {
+        font-size: 11px;
+    }
+
+    .main2 {
+        height: 165px;
+    }
+
+    .box1- h2 {
+        font-size: 13px;
+    }
+
+    .box2- img {
+        height: 62px !important;
+    }
+
+    .img-text {
+        font-size: 7.5px;
+    }
+
+    .main5 {
+        gap: 20px 10px;
+    }
+
+    .main5 h3 {
+        font-size: 13px;
+    }
+
+    .main5 p {
+        font-size: 10px;
     }
 }

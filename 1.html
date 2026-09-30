@@ -3,400 +3,608 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Amazon</title>
-    <link rel="stylesheet" href="1.css">  
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#131921">
+    <title>Amazon Style Store</title>
+
+    <link rel="stylesheet" href="1.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="box-1">
-            <img src="nav-sprite-global-1x-reorg-privacy._CB546381437_.png"  alt="" srcset="" height="50px"  
-                width="110px">
-            <p></p>
-        </div>
-        <div class="box-2">
-            <div class="location1">
-                <img src="123nav-sprite-global-1x-reorg-privacy._CB546381437_.png"  alt="" srcset="" height="30px" 
-                    width="28px">
 
+    <!-- ================= HEADER ================= -->
+
+    <header class="main">
+
+        <!-- Logo -->
+        <div class="box-1">
+            <img
+                src="nav-sprite-global-1x-reorg-privacy._CB546381437_.png"
+                alt="Amazon">
+        </div>
+
+        <!-- Location -->
+        <div class="box-2">
+
+            <div class="location1">
+                <img
+                    src="123nav-sprite-global-1x-reorg-privacy._CB546381437_.png"
+                    alt="Location">
             </div>
-            <div class="location2"> 
+
+            <div class="location2">
                 <p>Delivering to Badarpur 110044</p>
                 <h2>Update location</h2>
             </div>
+
         </div>
+
+        <!-- Search -->
         <div class="box-3">
+
             <select>
-                <option>All Categories</option> 
-                <option>Alexa Skills</option>
-                <option>Amazon Devices</option>
-                <option>Amazon Fashion</option>  
-                <option>Amazon Fresh</option>  
-                <option>Amazon Pharmacy</option> 
-                <option>Appliances</option>
-                <option>Apps & Games</option> 
-                <option>Audible Audiobooks</option>
-                <option>Baby</option> 
-                <option>Beauty</option>
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Mobiles</option>
+                <option>Fashion</option>
+                <option>Home</option>
                 <option>Books</option>
-                <option>Car & Motorbike</option>
             </select>
-            <input type="text" placeholder="search amazon" width="20px">
-            <button><img src="search-icon-png-5.png"  height="20px" width="20px"></button>  
+
+            <input
+                type="text"
+                placeholder="Search Amazon">
+
+            <button>
+                <img
+                    src="search-icon-png-5.png"
+                    alt="Search">
+            </button>
+
         </div>
+
+        <!-- Account / Cart -->
         <div class="box-4">
+
             <div class="box1">
+
                 <div class="img">
-                    <img src="R.png" alt="" srcset="" height="15px" width="16px">  
+                    <img
+                        src="R.png"
+                        alt="India">
                 </div>
+
                 <select>
-                    <option>EN - English</option>
-                    <option>TE - ரூலல்</option>
-                    <option>KN - சல்</option>
-                    <option>ML - 2வ00</option>
-                    <option>BN - वाश्ला</option>
-                    <option>MR - मराठी</option>
-                    <option>HI - हिंदी</option>
+                    <option>EN</option>
+                    <option>HI</option>
                 </select>
+
             </div>
+
             <div class="box2">
-                <div class="nav-singin">
-                    <p><span>Hello, sign in</span></p>
-                    <h2>Account & lists</h2>
-                </div>
+                <p>Hello, sign in</p>
+                <h2>Account & Lists</h2>
             </div>
+
             <div class="box3">
                 <p>Returns</p>
-                <h2>&Orders</h2>
+                <h2>& Orders</h2>
             </div>
-            <div class="box4">
-                <span class="Cart-counter">0</span>
-                <img src="4321nav-sprite-global-1x-reorg-privacy._CB546381437_.png"  alt="" srcset="" height="45px" 
-                    width="60px">
 
+            <div class="box4">
+
+                <span class="Cart-counter">0</span>
+
+                <img
+                    src="4321nav-sprite-global-1x-reorg-privacy._CB546381437_.png"
+                    alt="Cart">
+
+            </div>
+
+            <div class="cart-text">
+                Cart
             </div>
 
         </div>
-        <p style="color: white; margin-left: -29px; margin-right: 20px; margin-top: 8px;">Cart</p> 
-    </div>
-    <div class="main1">
-        <div class="box1">
+
+    </header>
+
+
+    <!-- ================= CATEGORY NAV ================= -->
+
+    <nav class="main1">
+
+        <div class="nav-inner">
+
             <div class="class">
-                <img src="5678nav-sprite-global-1x-reorg-privacy._CB546381437_.png"  alt="" height="43px" width="43px"
-                    srcset="">
-                <p style="margin-left: -10px;">All</p>
+
+                <img
+                    src="5678nav-sprite-global-1x-reorg-privacy._CB546381437_.png"
+                    alt="Menu">
+
+                <p>All</p>
+
             </div>
-            <div class="box2">
-                <div class="box1_">
+
+            <div class="nav-scroll">
+
+                <div class="nav-item">
                     <p>Fresh</p>
                 </div>
-                <div class="box2_">
-                    <p>MXPlayer</p>
+
+                <div class="nav-item">
+                    <p>MX Player</p>
                 </div>
-                <div class="box3_">
+
+                <div class="nav-item">
                     <p>Sell</p>
                 </div>
-                <div class="box4_">
+
+                <div class="nav-item">
                     <p>Bestsellers</p>
                 </div>
-                <div class="box5_">
+
+                <div class="nav-item">
                     <p>Mobiles</p>
                 </div>
-                <div class="box6_">
-                    <p>Today'sDeals</p>
+
+                <div class="nav-item">
+                    <p>Today's Deals</p>
                 </div>
-                <div class="box7_">
+
+                <div class="nav-item">
                     <p>Prime</p>
                 </div>
-                <div class="box8_">
-                    <p>Costomerservice</p>
+
+                <div class="nav-item">
+                    <p>Customer Service</p>
                 </div>
-                <div class="box9_">
-                    <p>NewReleases</p>
+
+                <div class="nav-item">
+                    <p>New Releases</p>
                 </div>
-                <div class="box10_">
+
+                <div class="nav-item">
                     <p>Electronics</p>
                 </div>
-                <div class="box11_">
+
+                <div class="nav-item">
                     <p>Fashion</p>
                 </div>
-                <div class="box12_">
-                    <p>Home&Kitchen</p>
+
+                <div class="nav-item">
+                    <p>Home & Kitchen</p>
                 </div>
-                <div class="box13_">
-                    <p>AmazonPay</p>
-                </div>
-                <div class="box14_">
-                    <p>Computers</p>
-                </div>
-                <div class="box15_">
-                    <p>Books</p>
-                </div>
-                <div class="box16_">
-                    <p>Home Improvement</p>
-                </div>
+
             </div>
+
         </div>
-    </div>
-    <div class="main2">
-        <img src="Jupiter25_T1_Heder_PC_Non_Prime.jpg" width="100%" height="400px" alt="" srcset=""> 
-    </div>
+
+    </nav>
 
 
-    <div class="product-list-1">
-        <div class="box1-">
+    <!-- ================= HERO ================= -->
 
-            <h2 style="margin-top: 10px; margin-left: 15px;">Revamp your home in style </h2> 
+    <section class="main2">
 
+        <img
+            src="Jupiter25_T1_Heder_PC_Non_Prime.jpg"
+            alt="Festival Sale">
+
+    </section>
+
+
+    <!-- ================= CATEGORY CARDS ================= -->
+
+    <main class="product-list-1">
+
+
+        <!-- HOME -->
+
+        <section class="box1-">
+
+            <h2>
+                Revamp your home in style
+            </h2>
 
             <div class="outer-box">
 
                 <div class="box2-">
-                    <img src="186x116_Home_decor_1._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
-                        srcset="">
-                    <p class="img-text">Figurines, vases &<br> more</p>
+
+                    <img
+                        src="186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                        alt="Decor">
+
+                    <p class="img-text">
+                        Figurines, vases & more
+                    </p>
+
                 </div>
+
+
                 <div class="box2-">
-                    <img src="23186x116_Home_furnishings_2._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
-                        srcset="">
-                    <p class="img-text">bedsheets & more</p>
+
+                    <img
+                        src="23186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+                        alt="Furnishing">
+
+                    <p class="img-text">
+                        Bedsheets & more
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="3333186x116_Home_storage_1._SY116_CB555624324_.jpg"
+                        alt="Storage">
+
+                    <p class="img-text">
+                        Home storage
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="444186x116_Home_lighting_2._SY116_CB555624324_.jpg"
+                        alt="Lighting">
+
+                    <p class="img-text">
+                        Lighting solutions
+                    </p>
+
                 </div>
 
             </div>
 
-            <div class="outer-box">
-                <div class="box2-">
-                    <img src="3333186x116_Home_storage_1._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
-                        srcset="">
-                    <p class="img-text"> Home storage </p>
-                </div>
-                <div class="box2-">
-                    <img src="444186x116_Home_lighting_2._SY116_CB555624324_.jpg" height="120px" width="120px" alt=""
-                        srcset="">
-                    <p class="img-text">Lighting solutions</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="box1-">
-            <h2 style="margin-top: 10px; margin-left: 15px;">Appliances for your home | Up to 55% off</h2>
+        </section>
 
 
-            <div class="outer-box">
+        <!-- APPLIANCES -->
 
-                <div class="box2-">
-                    <img src="Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" height="120px" width="120px"
-                        alt="" srcset="">
-                    <p class="img-text">Air conditioners</p>
-                </div>
-                <div class="box2-">
-                    <img src="22Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" height="120px" 
-                        width="120px" alt="" srcset="">
-                    <p class="img-text">Refrigerators</p>
-                </div>
+        <section class="box1-">
 
-            </div>
-
-            <div class="outer-box">
-                <div class="box2-">
-                    <img src="33Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" height="120px"
-                        width="120px" alt="" srcset="">
-                    <p class="img-text"> Microwaves </p>
-                </div>
-                <div class="box2-">
-                    <img src="4186x116---wm._SY116_CB667322346_.jpg" height="120px" width="120px" alt="" srcset="">
-                    <p class="img-text">Washing machines</p>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="box1-">
-            <h2 style="margin-top: 10px; margin-left: 15px;">Starting ₹149 | Headphones</h2> 
-
-
-            <div class="outer-box">
-
-                <div class="box2-">
-                    <img src="PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg" height="120px" width="120px" alt=""
-                        srcset="">
-                    <p class="img-text">Starting ₹249 | boAt</p> 
-                </div>
-                <div class="box2-">
-                    <img src="2PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg" height="120px" width="120px" alt="" 
-                        srcset="">
-                    <p class="img-text">Starting 2349 | boult</p> 
-                </div>
-
-            </div>
-
-            <div class="outer-box">
-                <div class="box2-">
-                    <img src="3PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg" height="120px" width="120px" alt=""  
-                        srcset="">
-                    <p class="img-text"> Starting 2649 | Noise</p> 
-                </div>
-                <div class="box2-">
-                    <img src="4PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg" height="120px" width="120px" alt="" 
-                        srcset="">
-                    <p class="img-text">Starting ₹149 | Zebronics</p> 
-                </div>
-
-            </div>
-
-        </div>
-        <div class="box1-">
-            <h2 style="margin-top: 10px; margin-left: 15px;">Automotive essentials | Up to 60% off </h2>
+            <h2>
+                Appliances for your home | Up to 55% off
+            </h2>
 
             <div class="outer-box">
 
                 <div class="box2-">
-                    <img src="Rim_tyrecare1x._SY116_CB410830552_.jpg" height="120px" width="120px" alt=""  srcset=""> 
-                    <p class="img-text">Tyre & rim care</p>
+
+                    <img
+                        src="Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
+                        alt="AC">
+
+                    <p class="img-text">
+                        Air conditioners
+                    </p>
+
                 </div>
+
+
                 <div class="box2-">
-                    <img src="Glasscare1X._SY116_CB410830553_.jpg" height="120px" width="120px" alt="" srcset="">
-                    <p class="img-text">Cleaning accessories</p>
+
+                    <img
+                        src="22Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
+                        alt="Refrigerator">
+
+                    <p class="img-text">
+                        Refrigerators
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="33Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+                        alt="Microwave">
+
+                    <p class="img-text">
+                        Microwaves
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="4186x116---wm._SY116_CB667322346_.jpg"
+                        alt="Washing Machine">
+
+                    <p class="img-text">
+                        Washing machines
+                    </p>
+
                 </div>
 
             </div>
+
+        </section>
+
+
+        <!-- HEADPHONES -->
+
+        <section class="box1-">
+
+            <h2>
+                Starting ₹149 | Headphones
+            </h2>
 
             <div class="outer-box">
+
                 <div class="box2-">
-                    <img src="Vaccum1x._SY116_CB410830552_.jpg" height="120px" width="120px" alt="" srcset="">
-                    <p class="img-text"> Vacuum cleaner </p>
+
+                    <img
+                        src="PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg"
+                        alt="Boat">
+
+                    <p class="img-text">
+                        Starting ₹249 | boAt
+                    </p>
+
                 </div>
+
+
                 <div class="box2-">
-                    <img src="Vega_helmet_186x116._SY116_CB405090404_.jpg" height="120px" width="120px"  alt=""
-                        srcset=""> 
-                    <p class="img-text">Helmets</p>
+
+                    <img
+                        src="2PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg"
+                        alt="Boult">
+
+                    <p class="img-text">
+                        Starting ₹349 | Boult
+                    </p>
+
                 </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="3PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg"
+                        alt="Noise">
+
+                    <p class="img-text">
+                        Starting ₹649 | Noise
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="4PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg"
+                        alt="Zebronics">
+
+                    <p class="img-text">
+                        Starting ₹149 | Zebronics
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-    </div>
 
-    <div class="main3" style=" overflow-x: scroll;">
-        <div class="box">
-            <img src="61vFuU1kYnL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="" > 
-        </div>
-        <div class="box">
-            <img src="671KkUduTAUL._AC_SY200_.jpg" alt=""  height="180px" width="180px" srcset="">
-        </div>
-        <div class="box">
-            <img src="261LpaWQiwPL._AC_SY200_ copy.jpg" alt="" height="180px" width="180px" srcset="" > 
-        </div>
-        <div class="box">
-            <img src="3361T3gurhdCL._AC_SY200_.jpg" alt=" " height="180px" width="180px" srcset="">
-        </div>
-        <div class="box">
-            <img src="171eErF68xxL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset="">
-        </div>
-        <div class="box">
-            <img src="271IPb5owYbL._AC_SY200_.jpg" alt=" " height="180px" width="180px" srcset="">
-        </div>
-        <div class="box"> 
-            <img src="41Lj0uQaDNL._AC_SY200_ copy.jpg" alt=" " height="180px" width="180px" srcset=""> 
+        </section>
 
-        </div>
-        <div class="box"> 
-            <img src="161rzyDdPAuL._AC_SY200_.jpg" alt=" " height="180px" width="180px" srcset="">
-        </div>
-        <div class="box"> 
-            <img src="22L5AXvRavL._AC_SY200_ copy.jpg" alt="" height="180px" width="180px" srcset=""> 
-        </div>
-        <div class="box"> 
-            <img src="81iDoT+WxEL._AC_SY200_.jpg" alt="" height="180px" width="180px" srcset=""> 
-        </div>
+
+        <!-- AUTOMOTIVE -->
+
+        <section class="box1-">
+
+            <h2>
+                Automotive essentials | Up to 60% off
+            </h2>
+
+            <div class="outer-box">
+
+                <div class="box2-">
+
+                    <img
+                        src="Rim_tyrecare1x._SY116_CB410830552_.jpg"
+                        alt="Tyre">
+
+                    <p class="img-text">
+                        Tyre & rim care
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="Glasscare1X._SY116_CB410830553_.jpg"
+                        alt="Cleaning">
+
+                    <p class="img-text">
+                        Cleaning accessories
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="Vaccum1x._SY116_CB410830552_.jpg"
+                        alt="Vacuum">
+
+                    <p class="img-text">
+                        Vacuum cleaner
+                    </p>
+
+                </div>
+
+
+                <div class="box2-">
+
+                    <img
+                        src="Vega_helmet_186x116._SY116_CB405090404_.jpg"
+                        alt="Helmet">
+
+                    <p class="img-text">
+                        Helmets
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= PRODUCT STRIP ================= -->
+
+    <section class="main3">
+
         <div class="box">
-            <img src="71cvXZBQMXL._AC_SY200_ copy 2.jpg" alt="" height="180px" width="180px" srcset=""> 
-        </div>
-        <div class="box">
-            <img src="461grUERHiAL._AC_SY200_ copy.jpg" alt="" height="180px" width="180px" srcset="">
+            <img src="61vFuU1kYnL._AC_SY200_.jpg" alt="">
         </div>
 
-    </div>
+        <div class="box">
+            <img src="671KkUduTAUL._AC_SY200_.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="261LpaWQiwPL._AC_SY200_ copy.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="3361T3gurhdCL._AC_SY200_.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="171eErF68xxL._AC_SY200_.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="271IPb5owYbL._AC_SY200_.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="41Lj0uQaDNL._AC_SY200_ copy.jpg" alt="">
+        </div>
+
+        <div class="box">
+            <img src="161rzyDdPAuL._AC_SY200_.jpg" alt="">
+        </div>
+
+    </section>
+
+
+    <!-- ================= BACK TO TOP ================= -->
+
     <div class="main4">
         <p>Back to top</p>
     </div>
-    <div class="main5">
-        <div class="box--1">
-            <h3>Get to Know Us</h3>
-            <br>
-            <p>Careers</p>
-            <br>
-            <p> Blog</p>
-            <br>
-            <p> About Amazon</p>
-            <br>
-            <p>Investor Relations</p>
-            <br>
-            <p>Amazon Devices</p> 
-            <br>
-            <p>Amazon Science</p>
-        </div>
-        <div class="box--2">
-            <h3>Make Money with Us</h3>
-            <br>
-            <p>Sell products on Amazon</p><br>
-            <p>Sell on Amazon Business</p><br>
-            <p>Sell apps on Amazon</p><br>
-            <p>Become an Affiliate</p><br>
-            <p>Advertise Your Products</p><br>
-            <p>Self-Publish with Us</p><br>
-            <p>Host an Amazon Hub</p><br>
-            <p>See More Make Money with Us</p>
-        </div>
-        <div class="box--3"> 
-            <h3>Amazon Payment Products</h3> 
-            <br>
-            <p>Amazon Business Card</p> 
-            <br> 
-            <p>Shop with Points</p>
-            <br>
-            <p>Reload Your Balance</p> <br> 
-            <p>Amazon Currency Converter</p> 
 
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="main5">
+
+        <div>
+            <h3>Get to Know Us</h3>
+            <p>Careers</p>
+            <p>Blog</p>
+            <p>About Us</p>
+            <p>Investor Relations</p>
+            <p>Amazon Devices</p>
         </div>
-        <div class="box--4">
+
+
+        <div>
+            <h3>Make Money with Us</h3>
+            <p>Sell products</p>
+            <p>Sell on Amazon Business</p>
+            <p>Become an Affiliate</p>
+            <p>Advertise Your Products</p>
+            <p>Self-Publish with Us</p>
+        </div>
+
+
+        <div>
+            <h3>Amazon Payment Products</h3>
+            <p>Amazon Business Card</p>
+            <p>Shop with Points</p>
+            <p>Reload Your Balance</p>
+            <p>Currency Converter</p>
+        </div>
+
+
+        <div>
             <h3>Let Us Help You</h3>
-            <br>
-            <p>Amazon and COVID-19</p>
-            <br>
             <p>Your Account</p>
-            <br> 
             <p>Your Orders</p>
-            <br>
-            <p>Shipping Rates & Policies</p>
-            <br>
+            <p>Shipping Rates</p>
             <p>Returns & Replacements</p>
-            <br>
-            <p>Manage Your Content and Devices</p>
-            <br>
             <p>Help</p>
         </div>
-    </div>
+
+    </footer>
+
+
+    <!-- ================= FOOTER BOTTOM ================= -->
+
     <div class="main6">
+
         <div class="box_-1">
-            <img src="nav-sprite-global-1x-reorg-privacy._CB546381437_.png" height="50px" width="85px" alt="" srcset=""> 
+
+            <img
+                src="nav-sprite-global-1x-reorg-privacy._CB546381437_.png"
+                alt="Amazon">
+
         </div>
+
+
         <div class="box_-2">
+
             <select>
-                <option>English </option>
-                <option>ரூலல் </option>
-                <option>சல் </option>
-                <option>2வ00 </option>
-                <option>वाश्ला </option>
-                <option>मराठी </option>
-                <option>हिंदी </option>
+                <option>English</option>
+                <option>हिंदी</option>
             </select>
+
         </div>
+
+
         <div class="box_-3">
-            <img src="R.png" alt="" srcset="" height="14px" width="15px"> 
+
+            <img src="R.png" alt="India">
+
             <p>India</p>
+
         </div>
+
     </div>
+
+
+    <script>
+
+        document
+            .querySelector(".main4")
+            .addEventListener("click", () => {
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+            });
+
+    </script>
+
 </body>
 
 </html>
